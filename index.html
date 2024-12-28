@@ -3,51 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exquisitesphere</title>
+    <title>Your Interior Design Startup - Designing Your Vision</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
     <header>
-        <h1>exquisitesphere</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                
+                <a href="#">
+                    <img src="images/logo.jpg" alt="Elegant Sphere Designs Logo">
+                </a>
+                
+            </div>
+            <a class="CompName">Elegant Sphere Designs</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
-    <section id="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Welcome to our World of Design</h2>
-            <p>We create spaces that are beautiful, functional, and smart.</p>
-            <a href="#contact" class="button">Get in Touch</a>
+            <h1>Crafting Spaces, Defining Experiences</h1>
+            <p>Expert interior design, precise shop drawings, luxurious finishing, intelligent smart homes, and impactful graphic design.</p>
+            <a href="#contact" class="button">Get a Free Consultation</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/background.jpg" alt="Modern Interior Design">
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Describe your business here. Include why you're passionate about design, tech and interiors.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Expertise</h2>
+            <div class="services-grid">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>Interior Design</h3>
+                    <p>Transforming your vision into stunning realities, creating functional and aesthetically pleasing spaces.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Shop Drawings</h3>
+                    <p>Providing precise and detailed technical drawings for seamless construction and execution.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-paint-roller"></i>
+                    <h3>Finishing Touches</h3>
+                    <p>Selecting premium materials and executing meticulous finishing work for a flawless and luxurious outcome.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-home"></i>
+                    <h3>Smart Homes</h3>
+                    <p>Integrating cutting-edge technology to enhance comfort, security, and efficiency in your living spaces.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-palette"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Creating impactful visual identities and marketing materials to elevate your brand and communication.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Interior Design</li>
-            <li>Shop Drawing</li>
-            <li>Finishing</li>
-            <li>Smart Home Integration (KNX, IoT)</li>
-        </ul>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in">
+                    <img src="images/work1.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Project Title 1</h3>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/work2.jpg" alt="Project 2">
+                    <div class="overlay">
+                        <h3>Project Title 2</h3>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/work3.jpg" alt="Project 3">
+                    <div class="overlay">
+                        <h3>Project Title 3</h3>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                </div>
+            <button class="load-more">Load More Projects</button>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>You can reach us at: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
-        <p>Phone: +1-555-123-4567</p>
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="why-us-grid">
+                <div class="why-us-item" data-aos="fade-right">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovative Solutions</h3>
+                    <p>We approach every project with fresh perspectives and creative ideas to deliver unique and impactful designs.</p>
+                </div>
+                <div class="why-us-item" data-aos="fade-left">
+                    <i class="fas fa-users"></i>
+                    <h3>Client-Focused Approach</h3>
+                    <p>Your vision is our priority. We collaborate closely with you throughout the process to ensure your satisfaction.</p>
+                </div>
+                <div class="why-us-item" data-aos="fade-right" data-aos-delay="100">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Proven Expertise</h3>
+                    <p>Our team comprises skilled professionals with a proven track record of delivering exceptional results.</p>
+                </div>
+                <div class="why-us-item" data-aos="fade-left" data-aos-delay="100">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h3>Quality and Reliability</h3>
+                    <p>We are committed to the highest standards of quality in every aspect of our work, from concept to completion.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Discuss Your Project</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +1-XXX-XXX-XXXX</p>
+                <p><i class="fas fa-envelope"></i> info@yourcompany.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Your Company Address</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Your Company Name. All rights reserved.</p>
+        <div class="container">
+            <p>© 2023 Your Interior Design Startup. All Rights Reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
+    <!-- Optional: Include AOS for advanced animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
